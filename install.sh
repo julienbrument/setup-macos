@@ -54,10 +54,11 @@ binaries=(
   node
   pkg-config
   redis
+  mongodb
+  ngrok
   tree
   unrar
   wget
-  youtube-dl
   zopfli
 )
 
@@ -77,9 +78,11 @@ brew tap caskroom/versions
 apps=(
 
   # work
-  rowanj-gitx
   sublime-text3
   virtualbox
+  webstorm
+  postman
+
 
   # productivity, core, runtimes
   cyberduck
@@ -89,11 +92,16 @@ apps=(
   flash
   java
   quicklook-json
+  docker-toolbox
+
 
   imageoptim
 
   istat-menus
   qlvideo # to display video files in finder and quick look
+  trim-enabler
+  timemachineeditor
+  malwarebytes-anti-malware
 
   # sharing
   #dropbox
@@ -101,8 +109,8 @@ apps=(
 
   # browsers
   google-chrome
-  firefox-nightly
-  webkit-nightly
+  firefox
+
 
   # communication
   skype
@@ -119,7 +127,6 @@ apps=(
 echo "Installing apps to /Applications..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
-echo "Don't forget to install Fleep separately (https://itunes.apple.com/us/app/fleep/id830440781?mt=12)"
 
 brew tap homebrew/fuse
 
@@ -127,10 +134,14 @@ echo "Installing other binaries that require Java, Fuse OS X, etc..."
 post_binaries=(
   # elasticsearch
   ntfs-3g
+
 )
+
 brew install ${post_binaries[@]}
 
 brew cask cleanup
+
+
 
 
 
@@ -172,8 +183,8 @@ npm install -g ${node_packages[@]}
 
 echo "Customizing Sublime..."
 
-# download and "install" Package Control
-# wget https://sublime.wbond.net/Package\ Control.sublime-package && mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
+#download and "install" Package Control
+wget https://sublime.wbond.net/Package\ Control.sublime-package && mv Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages
 
 # download and "install" Preferences file
 # wget https://rawgit.com/kangax/osx/master/Preferences.sublime-settings && mv Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
