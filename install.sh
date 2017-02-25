@@ -59,6 +59,7 @@ binaries=(
   unrar
   wget
   zopfli
+  upx
 )
 
 echo "Installing binaries..."
