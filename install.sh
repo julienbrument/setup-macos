@@ -141,42 +141,12 @@ brew install ${post_binaries[@]}
 brew cask cleanup
 
 
-
-
-
-echo "Generating SSH keys (https://help.github.com/articles/generating-ssh-keys)..."
-ssh-keygen -t rsa -C "brument.julien@gmail.com"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-pbcopy < ~/.ssh/id_rsa.pub
-
-
-open https://github.com/settings/ssh
-open https://bitbucket.org/account/user/julienbrument/ssh-keys/
-
-# echo "Customizing OSX..."
-# https://github.com/mathiasbynens/dotfiles/blob/master/.osx
-
-# TODO: triggers for quicksilver
-
-
-
 echo "Installing nvm..."
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash
 
 echo "Installing global node packages..."
 node_packages=(
-  bower
-  browserify
-  caniuse-cmd
-  grunt
-  gulp
-  htmlhint
-  imageoptim-cli
-  jshint
   jscs
-  qunit
-  watchify
 )
 npm install -g ${node_packages[@]}
 
