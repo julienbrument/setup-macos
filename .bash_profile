@@ -27,8 +27,7 @@
 
 #   Set Paths
 #   ------------------------------------------------------------
-    export PATH="$PATH:/usr/local/bin/"
-    export PATH="$PATH:/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin"
+    export PATH="$PATH:/usr/local/bin:/usr/local:/usr/local/sbin:/usr/local/git/bin:/sw/bin:/usr/local/mysql/bin"
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
