@@ -89,7 +89,6 @@ apps=(
   appcleaner
   osxfuse
   spectacle
-  flash
   java
   quicklook-json
   docker-toolbox
