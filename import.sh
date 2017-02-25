@@ -23,6 +23,7 @@ cp -r Keychains/* ~/Library/Keychains/
 
 
 echo "Import SSH keys"
+mkdir -p ~/.ssh/
 cp -r  SSHKeys/* ~/.ssh/
 
 
