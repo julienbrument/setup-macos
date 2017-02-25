@@ -55,7 +55,6 @@ binaries=(
   pkg-config
   redis
   mongodb
-  ngrok
   tree
   unrar
   wget
@@ -78,10 +77,11 @@ brew tap caskroom/versions
 apps=(
 
   # work
-  sublime-text3
+  sublime-text
   virtualbox
   webstorm
   postman
+  ngrok
 
 
   # productivity, core, runtimes
