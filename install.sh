@@ -93,7 +93,7 @@ apps=(
   java
   quicklook-json
   docker-toolbox
-
+  robomongo
 
   imageoptim
 
